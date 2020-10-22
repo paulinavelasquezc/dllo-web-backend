@@ -1,3 +1,4 @@
+require("./config");
 const express = require("express");
 const routes = require("./routes/routes");
 
@@ -9,4 +10,4 @@ app.use(routes);
 const PORT = 3001;
 app.listen(PORT, () => {
   console.log(`API running http://localhost:` + PORT);
-}); 
+});
